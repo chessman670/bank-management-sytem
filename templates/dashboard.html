@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5">
+    <div class="card shadow-lg p-4">
+        <h2 class="text-center mb-3">👤 Welcome, {{ user.name }}</h2>
+
+        <div class="text-center mt-3 mb-3">
+            <h4>💰 Current Balance: ₹{{ "%.2f"|format(user.balance) }}</h4>
+        </div>
+
+        <div class="d-flex justify-content-center gap-3 mt-4 flex-wrap">
+            <a href="{{ url_for('deposit') }}" class="btn btn-success px-4">Deposit</a>
+            <a href="{{ url_for('withdraw') }}" class="btn btn-warning px-4">Withdraw</a>
+            <a href="{{ url_for('transfer') }}" class="btn btn-info px-4">Transfer</a>
+            <a href="{{ url_for('history') }}" class="btn btn-secondary px-4">History</a>
+        </div>
+
+        <div class="text-center mt-4">
+            <a href="{{ url_for('logout') }}" class="btn btn-outline-danger">Logout</a>
+        </div>
+    </div>
+</div>
+{% endblock %}

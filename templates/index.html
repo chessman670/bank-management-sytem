@@ -1,0 +1,14 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="text-center mt-5">
+    <h1 class="text-center text-white">Welcome to Smart Bank</h1>
+    <p class="lead text-white">Your secure online banking system</p>
+
+    <div class="d-flex flex-column align-items-center gap-3 mt-4">
+        <a href="{{ url_for('register') }}" class="btn btn-success btn-lg w-50">Create Account</a>
+        <a href="{{ url_for('login') }}" class="btn btn-primary btn-lg w-50">Login</a>
+        <a href="{{ url_for('admin') }}" class="btn btn-danger btn-lg w-50">Admin Section</a>
+        <a href="{{ url_for('delete_account') }}" class="btn btn-warning btn-lg w-50">Delete Account</a>
+    </div>
+</div>
+{% endblock %}

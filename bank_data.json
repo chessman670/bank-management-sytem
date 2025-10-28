@@ -1,0 +1,50 @@
+{
+    "users": {
+        "69470640043914": {
+            "name": "max",
+            "pin": "0000",
+            "balance": 214.0
+        },
+        "72244000640052": {
+            "name": "sarathi",
+            "pin": "102030",
+            "balance": 1005286.0
+        },
+        "19225024884038": {
+            "name": "steve harington",
+            "dob": "2003-02-05",
+            "gender": "Male",
+            "phone": "8494874456",
+            "email": "steve@gmail.com",
+            "username": "steve",
+            "pin": "1234",
+            "balance": 895000.0
+        }
+    },
+    "transactions": {
+        "69470640043914": [
+            "Deposited \u20b91000.0",
+            "Transferred \u20b9100.00 to 72244000640052",
+            "Transferred \u20b910.00 to 72244000640052",
+            "Withdrew \u20b9300.00",
+            "Transferred \u20b920.00 to 72244000640052",
+            "Transferred \u20b956.00 to 72244000640052",
+            "Deposited \u20b9100.00",
+            "Transferred \u20b9100.00 to 72244000640052",
+            "Withdrew \u20b9300.00"
+        ],
+        "72244000640052": [
+            "Deposited \u20b91000000.0",
+            "Received \u20b9100.00 from 69470640043914",
+            "Received \u20b910.00 from 69470640043914",
+            "Received \u20b920.00 from 69470640043914",
+            "Received \u20b956.00 from 69470640043914",
+            "Received \u20b9100.00 from 69470640043914",
+            "Received \u20b95000.00 from 19225024884038"
+        ],
+        "19225024884038": [
+            "Deposited \u20b9900000.00",
+            "Transferred \u20b95000.00 to 72244000640052"
+        ]
+    }
+}

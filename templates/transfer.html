@@ -1,0 +1,23 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="container mt-5 col-md-4">
+    <h2 class="text-center">💸 Transfer Money</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label class="form-label">Recipient Account Number</label>
+            <input type="text" name="target_acc" class="form-control" placeholder="Enter recipient account number" required>
+        </div>
+
+        <div class="mb-3">
+            <label class="form-label">Amount (₹)</label>
+            <input type="number" name="amount" step="0.01" class="form-control" placeholder="Enter amount" required>
+        </div>
+
+        <button type="submit" class="btn btn-success w-100">Transfer</button>
+    </form>
+
+    <p class="text-center mt-3">
+        <a href="{{ url_for('dashboard', acc_no=acc_no) }}" class="btn btn-outline-secondary w-100 mt-2">⬅ Back to Dashboard</a>
+    </p>
+</div>
+{% endblock %}

@@ -1,0 +1,22 @@
+{% extends "base_user.html" %}
+
+{% block content %}
+<div class="container mt-4">
+    <div class="card shadow-sm">
+        <div class="card-header bg-dark text-white">
+            <h4 class="mb-0">📜 Transaction History</h4>
+        </div>
+        <div class="card-body">
+            {% if transactions %}
+                <ul class="list-group">
+                    {% for t in transactions %}
+                        <li class="list-group-item">{{ t }}</li>
+                    {% endfor %}
+                </ul>
+            {% else %}
+                <p class="text-muted">No transactions found.</p>
+            {% endif %}
+        </div>
+    </div>
+</div>
+{% endblock %}

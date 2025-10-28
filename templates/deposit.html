@@ -1,0 +1,13 @@
+{% extends "base.html" %}
+{% block content %}
+<div class="card p-4 mt-5 mx-auto shadow-lg" style="max-width: 500px;">
+    <h2>Deposit Money</h2>
+    <form method="POST">
+        <div class="mb-3">
+            <label class="form-label">Amount (₹)</label>
+            <input type="number" name="amount" class="form-control" required>
+        </div>
+        <button class="btn btn-success w-100">Deposit</button>
+    </form>
+</div>
+{% endblock %}
