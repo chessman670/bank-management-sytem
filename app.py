@@ -269,6 +269,11 @@ def delete_account():
 
     return render_template("delete_account.html")
 
+@app.route('/help')
+def help():
+    return render_template('help.html')
+
+
 @app.route("/history")
 def history():
     if "user" not in session:
